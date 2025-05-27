@@ -198,6 +198,37 @@ if (menuBtn && mobileMenu) {
     }
   });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector(".courses-track");
+    const slides = document.querySelectorAll(".courses-slide");
+    const dots = document.querySelectorAll(".slider-dots .dot");
+    let current = 0;
+
+    function showSlide(idx) {
+      track.style.transform = `translateX(-${idx * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle("active", i === idx));
+      current = idx;
+    }
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener("click", () => showSlide(idx));
+    });
+
+    // Optional: swipe support for mobile
+    let startX = 0;
+    track.addEventListener(
+      "touchstart",
+      (e) => (startX = e.touches[0].clientX)
+    );
+    track.addEventListener("touchend", (e) => {
+      let dx = e.changedTouches[0].clientX - startX;
+      if (dx < -50 && current < slides.length - 1) showSlide(current + 1);
+      if (dx > 50 && current > 0) showSlide(current - 1);
+    });
+
+    showSlide(0);
+  });
+
   // Đóng menu khi click ra ngoài
   document.addEventListener("click", function () {
     mobileMenu.classList.remove("open");
