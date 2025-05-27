@@ -26,7 +26,11 @@ body {
   margin: 0 auto;
   height: 60px;
 }
-
+@media (max-width: 768px) {
+  .right-section .register-btn {
+    display: none !important;
+  }
+}
 .logo-section {
   display: flex;
   align-items: center;
