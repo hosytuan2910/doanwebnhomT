@@ -152,6 +152,11 @@ body {
   transition: background-color 0.2s;
 }
 
+button.hero-search-btn {
+  font-size: 14px;
+  margin: 0 0 20px 0;
+}
+
 .search-btn:hover {
   background-color: #b91c1c;
 }

@@ -214,7 +214,7 @@ if (menuBtn && mobileMenu) {
       dot.addEventListener("click", () => showSlide(idx));
     });
 
-    // Optional: swipe support for mobile
+    // Vuốt trên mobile
     let startX = 0;
     track.addEventListener(
       "touchstart",
