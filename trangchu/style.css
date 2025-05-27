@@ -912,20 +912,6 @@ button.register-btn .explore-container {
   position: relative;
 }
 
-.course-image::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 40px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .course-content {
   padding: 25px;
 }
