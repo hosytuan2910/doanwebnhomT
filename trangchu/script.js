@@ -210,30 +210,3 @@ if (menuBtn && mobileMenu) {
     e.stopPropagation();
   });
 }
-
-// Khi nhấn vào link Premium User Benefits
-document.querySelector(".premium-benefits").onclick = function (e) {
-  e.preventDefault();
-  document.getElementById("premiumOverlay").style.display = "flex";
-};
-function closePremium() {
-  document.getElementById("premiumOverlay").style.display = "none";
-}
-// Khi nhấn "Nâng cấp ngay" nếu đã đăng nhập thì hiện popup chọn phương thức
-document.querySelector(".premium-btn")?.addEventListener("click", function () {
-  const user = localStorage.getItem("userName");
-  if (!user) {
-    alert("Bạn cần đăng nhập tài khoản mới sử dụng được tính năng này!");
-  } else {
-    document.getElementById("upgradeMethodOverlay").style.display = "flex";
-  }
-});
-function closeUpgradeMethod() {
-  document.getElementById("upgradeMethodOverlay").style.display = "none";
-}
-// Xử lý các nút phương thức thanh toán
-document.querySelectorAll(".upgrade-method-btn").forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    alert("Chức năng đang được cập nhật!");
-  });
-});

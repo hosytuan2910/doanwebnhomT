@@ -26,6 +26,7 @@ body {
   margin: 0 auto;
   height: 60px;
 }
+
 @media (max-width: 768px) {
   .right-section .register-btn {
     display: none !important;
@@ -193,6 +194,7 @@ body {
   font-size: 14px;
   text-decoration: none;
   transition: color 0.2s;
+  color: black;
   height: 40px;
   width: 170px;
   justify-content: center; /* giữa ngang */
@@ -212,6 +214,7 @@ body {
   transition: color 0.2s;
   height: 40px;
   width: 50px;
+  color: black;
   justify-content: center; /* giữa ngang */
   align-items: center;
   display: flex;
@@ -500,10 +503,12 @@ body {
   align-items: stretch;
 }
 .hero-image img {
-  max-width: 600px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  object-fit: contain;
 }
 .hero-person {
   width: 100%;
