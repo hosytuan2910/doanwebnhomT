@@ -1392,6 +1392,21 @@ button.register-btn .explore-container {
 }
 
 /* News Section Styles */
+.news-section {
+  padding: 60px 0 40px 0;
+  background: #fff;
+}
+
+.news-section h1 {
+  text-align: center;
+  color: #dc2626;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
 
 @media (max-width: 768px) {
   .section-header h2 {
