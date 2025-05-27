@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/trangchu/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/premium/premium.css" />
+    <title>Triple T Header</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <!-- Logo Section -->
+        <div class="logo-section">
+          <a href="#" class="logo">
+            <div class="logo-icon">
+              <img src="/img/logo.png" alt="" />
+            </div>
+            <span>TRIPLE T</span>
+          </a>
+
+          <div class="learn-dropdown">
+            <button class="learn-btn" id="learnBtn">
+              Learn
+              <div class="arrow-down"></div>
+            </button>
+            <ul class="learn-menu" id="learnMenu">
+              <li>CSS</li>
+              <li>HTML</li>
+              <li>C++</li>
+              <li>C#</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+          <div class="search-container">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="What do you want to learn?"
+            />
+            <button class="search-btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+          <button class="menu-btn" id="menuBtn">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+          </button>
+
+          <a href="#" class="premium-benefits">Premium User Benefits</a>
+          <a href="/dangky/dangky.html" class="sign-link">Sign</a>
+          <button class="register-btn">
+            <a href="/dangnhap/dangnhap.html">Register for free</a>
+          </button>
+        </div>
+        <div class="right-section" id="header-user" style="display: none">
+          <span class="user-welcome">Hello, <span id="userName"></span>!</span>
+          <a href="/profile.html" class="profile-link">Profile</a>
+          <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+        <!-- Thêm menu mobile ngay sau header (bên ngoài .header-container) -->
+        <nav id="mobileMenu" class="mobile-menu">
+          <ul>
+            <li>
+              <a href="#" class="premium-benefits">Premium User Benefits</a>
+            </li>
+            <li>
+              <a href="/dangky/dangky.html" class="sign-link">Sign</a>
+            </li>
+            <li>
+              <a href="/dangnhap/dangnhap.html" class="register-btn"
+                >Register for free</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Every Day is a<br />
+            <span class="highlight"
+              >Chance to<br />
+              Rise</span
+            >
+          </h1>
+          <p class="hero-description">
+            At Triple T, you'll find courses designed for both newcomers and
+            those already in the IT field, spanning basic to advanced concepts.
+          </p>
+          <div class="hero-search">
+            <input
+              type="text"
+              class="hero-search-input"
+              placeholder="Search our 999+ courses"
+            />
+            <button class="hero-search-btn">Search</button>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="hero-person">
+            <img
+              src="https://scontent.fhan20-1.fna.fbcdn.net/v/t39.30808-6/492496182_642458422118004_8426622888856668991_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH01s65uDnXJJN9X81FGKcwjxZByI0swXGPFkHIjSzBcYuWfa39WDrWUqfcXp5v8pUB5EoprIchBBeIsU2wZ-sQ&_nc_ohc=cD4VLkoVKGUQ7kNvwH8e4t8&_nc_oc=Adl8IzpLVe9HAwB2NioJxyRL_f7ctYn3pj1EhkXExdOQJDXN5OLqenhnlHEC2eEmxqw&_nc_zt=23&_nc_ht=scontent.fhan20-1.fna&_nc_gid=cuud6AuFxbIl4pvnxeGU7Q&oh=00_AfL9bKQ5C4g9HakndyTGrImpMZ5bBttmXE8iNM5yMAsAYw&oe=68378FB9"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore-section">
+      <div class="explore-container">
+        <div class="explore-content">
+          <div class="explore-decoration"></div>
+          <div class="explore-decoration"></div>
+          <div class="explore-decoration"></div>
+
+          <h2 class="explore-title">Explore the Course & Your Future Skills</h2>
+          <p class="explore-description">
+            <strong
+              >Unlock your creative potential and build your own digital
+              world.</strong
+            >
+            From websites to applications, bring your ideas to life with code.
+            Solve real-world problems with innovative software solutions. Become
+            a valuable asset in the ever-evolving tech industry.
+            <strong
+              >Your journey to becoming a tech creator starts here.</strong
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intensive Course Section -->
+    <section class="intensive-section">
+      <div class="intensive-container">
+        <h2 class="intensive-title">Intensive Course</h2>
+
+        <!-- Desktop Grid - Show all 3 cards -->
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="course-image fullstack"></div>
+            <div class="course-content">
+              <h3 class="course-name">Full-stack Website Development Course</h3>
+              <div class="course-price">999$</div>
+              <div class="course-stats">
+                <div class="course-stat">432 registrations</div>
+                <div class="course-stat duration">150h45p</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-image data-engineering"></div>
+            <div class="course-content">
+              <h3 class="course-name">Data Engineering</h3>
+              <div class="course-price">499$</div>
+              <div class="course-stats">
+                <div class="course-stat">269 registrations</div>
+                <div class="course-stat duration">100h45p</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-image deep-learning"></div>
+            <div class="course-content">
+              <h3 class="course-name">Deep Learning</h3>
+              <div class="course-price">399$</div>
+              <div class="course-stats">
+                <div class="course-stat">51 registrations</div>
+                <div class="course-stat duration">80h45p</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Slider - Show 1 card at a time -->
+        <div class="courses-slider">
+          <div class="courses-track" id="coursesTrack">
+            <div class="courses-slide">
+              <div class="course-card">
+                <div class="course-image fullstack"></div>
+                <div class="course-content">
+                  <h3 class="course-name">
+                    Full-stack Website Development Course
+                  </h3>
+                  <div class="course-price">999$</div>
+                  <div class="course-stats">
+                    <div class="course-stat">432 registrations</div>
+                    <div class="course-stat duration">150h45p</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="courses-slide">
+              <div class="course-card">
+                <div class="course-image data-engineering"></div>
+                <div class="course-content">
+                  <h3 class="course-name">Data Engineering</h3>
+                  <div class="course-price">499$</div>
+                  <div class="course-stats">
+                    <div class="course-stat">269 registrations</div>
+                    <div class="course-stat duration">100h45p</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="courses-slide">
+              <div class="course-card">
+                <div class="course-image deep-learning"></div>
+                <div class="course-content">
+                  <h3 class="course-name">Deep Learning</h3>
+                  <div class="course-price">399$</div>
+                  <div class="course-stats">
+                    <div class="course-stat">51 registrations</div>
+                    <div class="course-stat duration">80h45p</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots for mobile slider only -->
+        <div class="slider-dots">
+          <span class="dot active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+    <div class="main-wrapper">
+      <!-- Hero Section -->
+      <!-- Thay thế toàn bộ banner-section hiện tại bằng đoạn sau, đặt ngoài main-wrapper nếu muốn full width -->
+      <div class="banner-section">
+        <div class="banner-wrapper">
+          <div class="banner-content">
+            <h1>With the new season come new potential.</h1>
+            <p>
+              Save up to 30% with the code APRIL2024/2APRIL!<br />
+              Boost your career, expand your horizons, and grow your potential.
+              Offer ends April 30, 2025.
+            </p>
+            <button class="cta-button" onclick="scrollToLessons()">
+              Learn More
+            </button>
+          </div>
+          <div class="discount-tag">
+            <div class="discount-label">
+              SALE OFF<br />
+              30%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Courses Section -->
+    <div class="section-header">
+      <h2>Free Fundamentals Course</h2>
+    </div>
+
+    <div class="lesson-grid" id="lessonGrid">
+      <div class="lesson-item" onclick="openLesson('HTML')">
+        <div class="lesson-thumb html-style">
+          <span>HTML</span>
+        </div>
+        <div class="lesson-details">
+          <div class="lesson-name">HTML</div>
+          <div class="lesson-desc">Free</div>
+          <div class="lesson-meta">
+            <div class="score-display">
+              <span class="star-icons">★★★★★</span>
+              <span>4.9 • 45K+ views</span>
+            </div>
+            <div class="students">👥 50K+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-item" onclick="openLesson('CSS')">
+        <div class="lesson-thumb css-style">
+          <span>CSS</span>
+        </div>
+        <div class="lesson-details">
+          <div class="lesson-name">CSS</div>
+          <div class="lesson-desc">CSS start gets an upgrade</div>
+          <div class="lesson-meta">
+            <div class="score-display">
+              <span class="star-icons">★★★★★</span>
+              <span>4.8 • 38K+ views</span>
+            </div>
+            <div class="students">👥 42K+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-item" onclick="openLesson('Java')">
+        <div class="lesson-thumb java-style">
+          <span>JAVA</span>
+        </div>
+        <div class="lesson-details">
+          <div class="lesson-name">JAVA COURSE</div>
+          <div class="lesson-desc">Free</div>
+          <div class="lesson-meta">
+            <div class="score-display">
+              <span class="star-icons">★★★★★</span>
+              <span>4.9 • 52K+ views</span>
+            </div>
+            <div class="students">👥 65K+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-item" onclick="openLesson('C++')">
+        <div class="lesson-thumb cpp-style">
+          <span>C++</span>
+        </div>
+        <div class="lesson-details">
+          <div class="lesson-name">C++</div>
+          <div class="lesson-desc">Free</div>
+          <div class="lesson-meta">
+            <div class="score-display">
+              <span class="star-icons">★★★★★</span>
+              <span>4.7 • 35K+ views</span>
+            </div>
+            <div class="students">👥 40K+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-item" onclick="openLesson('Python')">
+        <div class="lesson-thumb python-style">
+          <span>PYTHON</span>
+        </div>
+        <div class="lesson-details">
+          <div class="lesson-name">PYTHON</div>
+          <div class="lesson-desc">Free</div>
+          <div class="lesson-meta">
+            <div class="score-display">
+              <span class="star-icons">★★★★★</span>
+              <span>4.9 • 68K+ views</span>
+            </div>
+            <div class="students">👥 80K+</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lesson-item" onclick="openLesson('C#')">
+        <div class="lesson-thumb csharp-style">
+          <span>C#</span>
+        </div>
+        <div class="lesson-details">
+          <div class="lesson-name">C#</div>
+          <div class="lesson-desc">Free</div>
+          <div class="lesson-meta">
+            <div class="score-display">
+              <span class="star-icons">★★★★★</span>
+              <span>4.8 • 41K+ views</span>
+            </div>
+            <div class="students">👥 48K+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="nav-dots"></div>
+
+    <section class="news-section">
+      <h1>Featured articles and stories</h1>
+      <div class="news-container">
+        <div class="news-list">
+          <!-- News Item 1 -->
+          <div class="news-item">
+            <div
+              class="news-thumb"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80');
+              "
+            >
+              <span class="news-thumb-caption">Practical products</span>
+            </div>
+            <div class="news-content">
+              <h3 class="news-title">Creations by Triple T Learners</h3>
+              <p class="news-desc">
+                Triple T students consistently produce impressive creations,
+                ranging from innovative designs to skillfully crafted items.
+                Their diverse projects showcase the practical application of
+                their learning and highlight their growing talents. The tangible
+                results of their dedication are a testament to the quality of
+                education at Triple T.
+              </p>
+              <div class="news-meta">
+                <span>13/03/2025</span>
+                <span>by Tố Tý Tuấn</span>
+              </div>
+              <button class="news-btn">See more</button>
+            </div>
+          </div>
+          <!-- News Item 2 -->
+          <div class="news-item">
+            <div
+              class="news-thumb"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=600&q=80');
+              "
+            >
+              <span class="news-thumb-caption"
+                >Information about Developers today.</span
+              >
+            </div>
+            <div class="news-content">
+              <h3 class="news-title">A developer is a programmer.</h3>
+              <p class="news-desc">
+                The programming industry is currently witnessing strong
+                development, becoming one of the most attractive and stable
+                careers. The demand for programmers is not only increasing in
+                the field of information technology but is also spreading to
+                sectors such as healthcare, education, finance, and e-commerce.
+              </p>
+              <div class="news-meta">
+                <span>12/01/2025</span>
+                <span>by Lê Quang Trung</span>
+              </div>
+              <button class="news-btn">See more</button>
+            </div>
+          </div>
+          <!-- News Item 3 -->
+          <div class="news-item">
+            <div
+              class="news-thumb"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80');
+              "
+            >
+              <span class="news-thumb-caption"
+                >Why do many people choose to study IT?</span
+              >
+            </div>
+            <div class="news-content">
+              <h3 class="news-title">Why do many people choose to study IT?</h3>
+              <p class="news-desc">
+                The IT industry in general and the programming field in
+                particular are currently the most "thirsty" for human resources
+                in Vietnam. According to statistics from TopDev, the demand for
+                IT personnel is on the rise as more and more young people are
+                choosing this field due to attractive job opportunities and
+                competitive salaries.
+              </p>
+              <div class="news-meta">
+                <span>09/01/2025</span>
+                <span>by Xong Bá Tùng</span>
+              </div>
+              <button class="news-btn">See more</button>
+            </div>
+          </div>
+        </div>
+        <div class="news-more">
+          <a href="#" class="news-more-link">See all &gt;&gt;</a>
+        </div>
+      </div>
+    </section>
+    <div class="reviews-section">
+      <div class="reviews-header">
+        <div class="reviews-title">The reviews are in</div>
+        <div class="reviews-subtitle">
+          <strong>What learners are saying</strong>
+        </div>
+      </div>
+      <div class="reviews-list">
+        <div class="review-card">
+          <div class="review-quote">
+            “<strong
+              >This course helped me think about the person I want to
+              be.</strong
+            >
+            The mental space that it afforded me allowed me to broaden my
+            horizons and think about opportunities I hadn’t considered before.”
+          </div>
+          <div class="review-footer">
+            <div class="review-avatar">
+              <span class="review-icon">💬</span>
+            </div>
+            <div>
+              <div class="review-name"><strong>Maggie B.</strong></div>
+              <div class="review-desc">
+                TUMA Professional Certificate Program in Lean Six Sigma
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-quote">
+            “One employer was very interested in my boot camp experience and
+            couldn’t believe all I learned in just six months.
+            <strong>I ended up getting that job.</strong>”
+          </div>
+          <div class="review-footer">
+            <div class="review-avatar">
+              <span class="review-icon">💬</span>
+            </div>
+            <div>
+              <div class="review-name"><strong>Daniele D.</strong></div>
+              <div class="review-desc">
+                University of Central Florida Digital Marketing Boot Camp
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-quote">
+            “The online program helped me refocus my main tasks as a leader:
+            <strong
+              >The Advanced Web Programming course with HTML, CSS, and
+              JavaScript helps you upgrade your skills from basic to
+              professional. The course content includes advanced HTML5, CSS3
+              (Flexbox, Grid, Animation, Responsive), modern JavaScript
+              (advanced DOM, Fetch API, Promises, Async/Await), and practical
+              experience building real projects such as e-commerce websites,
+              landing pages, and to-do list applications. After the course, you
+              will be confident in designing beautiful, mobile-friendly websites
+              and ready to move on to frameworks like ReactJS. The course is
+              suitable for those who already have basic web programming
+              knowledge and wish to develop a deep programming career.</strong
+            >”
+          </div>
+          <div class="review-footer">
+            <div class="review-avatar">
+              <span class="review-icon">💬</span>
+            </div>
+            <div>
+              <div class="review-name"><strong>Slim C.</strong></div>
+              <div class="review-desc">
+                Oxford Executive Leadership Programme
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="intro-section">
+      <div class="intro-container">
+        <div class="intro-content">
+          <h2 class="intro-title">Introduction to the course.</h2>
+          <p class="intro-desc">
+            The Advanced Web Programming course with
+            <strong>HTML, CSS, and JavaScript</strong> helps you upgrade your
+            skills from basic to professional. The course content includes
+            advanced HTML5, CSS3 (Flexbox, Grid, Animation, Responsive), modern
+            JavaScript (advanced DOM, Fetch API, Promises, Async/Await), and
+            practical experience building real projects such as e-commerce
+            websites, landing pages, and to-do list applications. After the
+            course, you will be confident in designing beautiful,
+            mobile-friendly websites and ready to move on to frameworks like
+            ReactJS. The course is suitable for those who already have basic web
+            programming knowledge and wish to develop a deep programming career.
+          </p>
+        </div>
+        <div class="intro-video">
+          <div class="video-thumb">
+            <img
+              src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
+              alt="Course Introduction"
+            />
+            <div class="video-play">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle
+                  cx="24"
+                  cy="24"
+                  r="24"
+                  fill="#fff"
+                  fill-opacity="0.85"
+                />
+                <polygon points="20,16 36,24 20,32" fill="#dc2626" />
+              </svg>
+            </div>
+            <div class="video-duration">07:53</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subjects-section">
+      <div class="subjects-container">
+        <div class="subjects-header"><span>Popular Subjects</span></div>
+        <div class="subjects-list">
+          <div class="subjects-col">
+            <div class="subjects-title">Computer Science <span>&gt;</span></div>
+            <ul>
+              <li>Azuze</li>
+              <li>Blockchain</li>
+              <li>C Programming</li>
+              <li>DevOps</li>
+              <li>Django</li>
+              <li>Full Stack Development</li>
+              <li>HTML</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          <div class="subjects-col">
+            <div class="subjects-title">Languague <span>&gt;</span></div>
+            <ul>
+              <li>Chinese</li>
+              <li>English</li>
+              <li>ESL</li>
+              <li>Grammar</li>
+              <li>Italian</li>
+              <li>Vietnamese</li>
+              <li>Mandarin</li>
+              <li>Sign Language</li>
+              <li>Spanish</li>
+              <li>Writing</li>
+            </ul>
+          </div>
+          <div class="subjects-col">
+            <div class="subjects-title">Computer Science <span>&gt;</span></div>
+            <ul>
+              <li>Artificial Intelligence</li>
+              <li>Big Data</li>
+              <li>Cloud Computing</li>
+              <li>Computer Programming</li>
+              <li>Data Analysis</li>
+              <li>Data Mining</li>
+              <li>Machine Learning</li>
+              <li>Power BI</li>
+              <li>Python</li>
+              <li>Quantum Computing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-bg"></div>
+      <div class="footer-content">
+        <div class="footer-col subscribe-col">
+          <a href="#" class="footer-logo">
+            <span class="footer-logo-icon">TTT</span>
+            <span class="footer-logo-text">TRIPLE T</span>
+          </a>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Enter your email..." required />
+            <button type="submit">Register to receive information.</button>
+          </form>
+          <div class="footer-note">
+            By providing your email address, you agree to TRIPLE T's Terms of
+            Service and Privacy Policy regarding your personal information.
+          </div>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Course</div>
+          <ul>
+            <li>C++ Programming</li>
+            <li>HTML Programming</li>
+            <li>SQL Programming</li>
+            <li>CSS Programming</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">We are TRIPLE TEAM</div>
+          <ul>
+            <li>Mr. Trung</li>
+            <li>Mr. Tuan</li>
+            <li>Mr. Tong</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-title">Customer corner</div>
+          <ul>
+            <li>Rate us</li>
+            <li>Rewards section</li>
+            <li>Support</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div><span class="footer-icon">👤</span> Ho Sy Tuan</div>
+          <div><span class="footer-icon">✉️</span> Hosytuan2910@gmail.com</div>
+          <div><span class="footer-icon">📞</span> 0976810396</div>
+          <div><span class="footer-icon">💬</span> Mr. Beast</div>
+          <div>
+            <span class="footer-icon">📍</span> 51 Lý Tự Trọng, Hà Huy Tập, TP
+            Vinh, Nghệ An
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">© 2025 TRIPLE T. All rights reserved.</div>
+    </footer>
+    <div id="premiumOverlay" class="premium-overlay" style="display: none">
+      <div class="premium-popup">
+        <button class="premium-close" onclick="closePremium()">&times;</button>
+        <div class="premium-icon">
+          <i class="fa-solid fa-crown"></i>
+        </div>
+        <h2 class="premium-title">Nâng cấp tài khoản Premium</h2>
+        <p class="premium-desc">
+          Trở thành thành viên Premium để nhận các quyền lợi đặc biệt:
+        </p>
+        <ul class="premium-list">
+          <li>
+            <i class="fa-solid fa-check"></i> Truy cập tất cả khóa học nâng cao
+          </li>
+          <li><i class="fa-solid fa-check"></i> Tải tài liệu độc quyền</li>
+          <li><i class="fa-solid fa-check"></i> Hỗ trợ trực tuyến 24/7</li>
+          <li><i class="fa-solid fa-check"></i> Không quảng cáo</li>
+          <li><i class="fa-solid fa-check"></i> Nhận chứng chỉ Premium</li>
+        </ul>
+        <button class="premium-btn">Nâng cấp ngay</button>
+      </div>
+      <div
+        id="upgradeMethodOverlay"
+        class="premium-overlay"
+        style="display: none"
+      >
+        <div class="premium-popup">
+          <button class="premium-close" onclick="closeUpgradeMethod()">
+            &times;
+          </button>
+          <h2 class="premium-title">Chọn phương thức nâng cấp</h2>
+          <div class="upgrade-methods">
+            <button class="upgrade-method-btn">
+              <i class="fa-solid fa-building-columns"></i> Chuyển khoản ngân
+              hàng
+            </button>
+            <button class="upgrade-method-btn">
+              <i class="fa-solid fa-mobile-screen"></i> Momo
+            </button>
+            <button class="upgrade-method-btn">
+              <i class="fa-solid fa-credit-card"></i> Thẻ ngân hàng
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/trangchu/script.js"></script>
+  </body>
+</html>

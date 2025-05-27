@@ -1,0 +1,97 @@
+.register-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2d0b5a 0%, #1e1b4b 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register-form {
+  background: rgba(20, 20, 60, 0.85);
+  border-radius: 24px;
+  padding: 40px 32px 32px 32px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+}
+.input-animated {
+  box-shadow: 0 0 0 2px #dc2626, 0 0 8px #dc2626;
+  transition: box-shadow 0.3s;
+}
+.register-title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 0;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  outline: none;
+  transition: background 0.2s;
+}
+.register-form input[type="text"]:focus,
+.register-form input[type="email"]:focus,
+.register-form input[type="password"]:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+.password-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.password-group label {
+  color: #fff;
+  font-size: 0.95rem;
+  cursor: pointer;
+  user-select: none;
+}
+.register-btn {
+  background-color: #dc2626;
+  color: #fff;
+  border: 1.5px solid #dc2626;
+  padding: 12px 0;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: background 0.2s, color 0.2s;
+}
+.register-btn:hover {
+  background: #fff;
+  color: #dc2626;
+}
+.register-other {
+  margin-top: 10px;
+  text-align: right;
+  color: #fff;
+  font-size: 0.95rem;
+}
+.register-social {
+  margin-top: 6px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+.register-social img {
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.2s;
+}
+.register-social a:hover img {
+  filter: brightness(1) invert(0) sepia(1) hue-rotate(-30deg) saturate(5);
+}
